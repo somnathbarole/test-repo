@@ -136,4 +136,3 @@ angle(TimeDomainBodyGyroscopeJerkMean,gravityMean)
 angle(X,gravityMean)
 angle(Y,gravityMean)
 angle(Z,gravityMean)
-
