@@ -1,5 +1,6 @@
-## Coursera-Getting and Cleaning Data-Course Project
+## Getting and Cleaning Data-Course Project
 This README file summarizes the instructions for Getting and Cleaning Data Course Project and explains how the R script run_analysis.R works to perform the tasks in the project.
+
 ## Project instructions:
 Basically project asks to create R script run_analysis.R to perform following steps. <br />
 1.	Merges the training and the test sets to create one data set.<br />
@@ -14,18 +15,21 @@ The R script run_analysis.R has five different parts according to what is being 
 Part-1 of the code reads all the required files and forms the complete data set; function rbind() is used to form data set.
 <br />
 
-Part-2 of the script extracts measurements on the mean and standard deviation for each measurement. Note that measurements with string mean(), Mean and std in the feature names are extracted; function grep() is used to extract these measurements.
+Part-2 of the script extracts measurements on the mean and standard deviation for each measurement. Note that measurements with string mean(), Mean and std in the feature names are extracted; function grep() is used to extract these measurements.<br />
+
 Part-3 labels the activity names for respective activities in the data set. <br />
 
 Part-4 labels the data set with descriptive variable names, function gsub() is used to perform this task. Below are the modifications done in the given variable names to make variable names more clear.<br />
-
 Acc to Accelerator; Gyro to Gyroscope; Mag to Magnitude;  t to TimeDomain; f to FrequencyDomain; std to StandardDeviation, etc
 <br />
 
-Part-5 creates tidy data from data in step-4 with the average of each variable for each activity and each subject; functions melt() and dcast are used to perform this task. <br />
+Part-5 creates tidy data from data in step-4 with the average of each variable for each activity and each subject; function melt() and dcast() are used to perform this task. <br />
 
 ## Running the script:
-Please make sure to set the working directory at the start of the script before running the script.
+Please make sure to set the working directory as explained below before running the script.
+"/UCI HAR Dataset" for reading activity_labels.txt and features.txt <br />
+"/UCI HAR Dataset/test" for reading subject_test.txt, X_test.txt and y_test.txt <br />
+"/UCI HAR Dataset/train" for reading subject_train.txt, X_train.txt and y_train.txt <br />
 
 ## Additional information:
 Please refer the CodeBook.md for more information about the variables, data, etc.
