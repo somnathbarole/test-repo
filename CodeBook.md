@@ -59,7 +59,7 @@ DataExt: Extracted measurements on mean and standard deviation for each measurem
 
 TidyData: Tidy data set with average of each variable for each activity and each subject
 
-## Parameters in Tidy data set
+## Parameters / Variables in Tidy data set
 The parameters in the tidy data set are given below. These are already given in the descriptive fashion and further description explanation of these parameters is not given.
 The acceleration signal from accelerometer X axis in standard gravity has unit 'g' and the angular velocity vector measured by the gyroscope has the unit radian/sec.
 
